@@ -52,4 +52,13 @@ public interface MemoryCache {
      * @param level This integer represents a trim level as specified in {@link ComponentCallbacks2}
      */
     public void trimMemory(int level);
+<<<<<<< HEAD
+=======
+
+    /**
+     * Trim the memory cache to specified size.
+     * @param size The size, in bytes, to trim the memory cache to.
+     */
+    public void trimToSize(int size);
+>>>>>>> Introduced methods to trim and clear the memory cache
 }
