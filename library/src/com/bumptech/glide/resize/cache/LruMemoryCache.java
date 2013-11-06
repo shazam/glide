@@ -5,8 +5,8 @@
 package com.bumptech.glide.resize.cache;
 
 import android.graphics.Bitmap;
-
 import java.util.LinkedHashMap;
+import java.util.Map;
 
 /**
  */
@@ -48,7 +48,7 @@ public class LruMemoryCache implements MemoryCache {
     }
 
     private void evict() {
-        LinkedHashMap.Entry<String, Bitmap> last;
+        Map.Entry<String, Bitmap> last;
         while (currentSize > maxSize) {
             last = cache.entrySet().iterator().next();
             final Bitmap toRemove = last.getValue();

@@ -1,6 +1,7 @@
 library/bin/*
 library/gen/*
 library/build/*
+library/target
 library/local.properties
 library/.gradle
 library/.settings
@@ -20,3 +21,4 @@ samples/flickr/local.properties
 /library/.classpath
 /library/.project
 docs/**/*
+out
