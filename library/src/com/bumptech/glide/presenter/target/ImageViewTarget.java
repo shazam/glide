@@ -45,10 +45,6 @@ public class ImageViewTarget implements Target {
         imageView.startAnimation(animation);
     }
 
-    public ImageView getImageView() {
-        return imageView;
-    }
-
     @Override
     public void setImagePresenter(ImagePresenter imagePresenter) {
         this.imagePresenter = imagePresenter;
