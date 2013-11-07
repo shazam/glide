@@ -57,7 +57,6 @@ public class LruMemoryCache implements MemoryCache {
         while (iterator.hasNext()) {
             final Bitmap bitmap = iterator.next().getValue();
             bitmap.recycle();
-            iterator.next();
             iterator.remove();
         }
         currentSize = 0;
